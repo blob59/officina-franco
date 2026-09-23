@@ -1,14 +1,10 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "officina-franco",
-  "main": "dist/_worker.js/index.js",
   "compatibility_date": "2026-09-23",
   "compatibility_flags": ["nodejs_compat"],
+  "main": "vinext/server/app-router-entry",
   "assets": {
-    "binding": "ASSETS",
-    "directory": "dist"
-  },
-  "observability": {
-    "enabled": true
+    "not_found_handling": "none"
   }
 }
